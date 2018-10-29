@@ -28,8 +28,8 @@ def sp_rebuild(transfer_date):
 
 
 if __name__ == "__main__":
-    start_date = datetime(2018, 10, 15)
-    end_date = datetime(2018, 10, 16)
+    start_date = datetime(2018, 10, 17)
+    end_date = datetime(2018, 10, 22)
     for i in range((end_date - start_date).days + 1):
         date = start_date + timedelta(days=i)
         sp_rebuild(date.strftime("%Y-%m-%d"))

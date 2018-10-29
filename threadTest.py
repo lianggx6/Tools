@@ -2,7 +2,6 @@
 import threading
 from queue import Queue
 from pymongo import MongoClient
-from datetime import datetime
 
 # username = 'aduser2'
 # password = 'HFtef9Jcc%8EheGt'
