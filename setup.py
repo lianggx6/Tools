@@ -1,19 +1,17 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2018/7/25 15:10
+# @Author  : tao.shao
+# @File    : setup.py
+
 from distutils.core import setup
-from setuptools import find_packages, Extension
+# from Cython.Build import cythonize
 
 setup(
-    name='liang',
-    version='0.4',
-    url='',
-    license='',
-    author='LiangGongxun',
-    description='this is a test for setup tool',
-    long_description="this package include a pack which is named by liang. "
-                     "the package has no use just a test",
-    entry_points={
-        'console_scripts': [
-            'liangtest = liang.manger:main',
-        ],
-    },
-    packages=["liang"], install_requires=['pymongo']
+    # ext_modules=cythonize("parser.pyx"),
+    name='kgi_parser',
+    version=0.1,
+    description="Parse the KGI data in the computer",
+    author="LiangGongxun",
+    author_email="lianggx@jyquant.com.cn",
+    packages=["kgi_parser"]
 )
