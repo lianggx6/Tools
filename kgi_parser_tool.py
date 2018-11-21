@@ -1,10 +1,9 @@
 from datetime import datetime, timedelta
-
 from kgi_parser import KgiParser
 
 if __name__ == "__main__":
-    start_date = datetime(2018, 8, 21)
-    end_date = datetime(2018, 8, 30)
+    start_date = datetime(2018, 10, 1)
+    end_date = datetime(2018, 11, 18)
     for i in range((end_date - start_date).days + 1):
         date = start_date + timedelta(days=i)
         kgi = KgiParser(True, date)
